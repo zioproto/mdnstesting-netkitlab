@@ -205,7 +205,7 @@ LoadPlugin "olsrd_txtinfo.so.0.1"
 # !!CHANGE THE INTERFACE LABEL(s) TO MATCH YOUR INTERFACE(s)!!
 # (eg. wlan0 or eth1):
 
-Interface "eth0 "eth1"
+Interface "eth0" "eth1"
 {
     # Olsrd can autodetect changes in NIC
     # configurations(IP address changes etc.). 
