@@ -35,10 +35,7 @@ ClearScreen     yes
 
 Hna4
 {
-#   Internet gateway:
-#   0.0.0.0      0.0.0.0
-#   more entries can be added:
-#   192.168.1.0  255.255.255.0
+   192.168.2.0  255.255.255.0
 }
 
 # HNA IPv6 routes
@@ -157,10 +154,10 @@ PlParam     "NonOlsrIf"  "eth1"
 #	PlParam "lon"		"13.000001"
 #}
 
-#LoadPlugin "olsrd_txtinfo.so.0.1"
-#{
-#	PlParam	"Accept" "127.0.0.1"
-#}
+LoadPlugin "olsrd_txtinfo.so.0.1"
+{
+	PlParam	"Accept" "127.0.0.1"
+}
 
 #LoadPlugin "olsrd_dot_draw.so.0.3"
 #{
@@ -208,7 +205,7 @@ PlParam     "NonOlsrIf"  "eth1"
 # !!CHANGE THE INTERFACE LABEL(s) TO MATCH YOUR INTERFACE(s)!!
 # (eg. wlan0 or eth1):
 
-Interface "eth0"
+Interface "eth0 "eth1"
 {
     # Olsrd can autodetect changes in NIC
     # configurations(IP address changes etc.). 
