@@ -36,6 +36,7 @@ ClearScreen     yes
 Hna4
 {
    192.168.2.0  255.255.255.0
+   192.168.3.0  255.255.255.0
 }
 
 # HNA IPv6 routes
@@ -131,6 +132,8 @@ LoadPlugin "olsrd_mdns.so.1.0.0"
 {
 
 PlParam     "NonOlsrIf"  "eth1"
+PlParam     "NonOlsrIf"  "eth2"
+PlParam     "NonOlsrIf"  "eth3"
 }
 
 

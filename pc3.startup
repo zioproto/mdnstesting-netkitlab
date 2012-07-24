@@ -1,0 +1,4 @@
+ifconfig eth0 192.168.3.2 up
+route add default gw 192.168.3.1
+ip -6 addr add 2000:3::2/64 dev eth0
+route -A inet6 add default gw 2000:3::1
